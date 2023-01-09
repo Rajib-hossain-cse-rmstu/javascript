@@ -8,15 +8,26 @@
 </head>
 <body>
    <script>
-        var number = prompt('Enter a number');
-        var i = 1;
-        while(i <= number)
+        // var number = prompt('Enter a number');
+        // var i = 1;
+        // while(i < number)
+        // {
+        //     console.log('You are now in : ' +i);
+        //     i++;
+        // }
+
+        var anotherNumber = prompt('Enter a number');//15
+        var j = 1;
+
+        while(j <= anotherNumber)
         {
-            console.log('You are now in : ' +i);
-            i++;
+            if(j%2 !== 0)
+            {
+                console.log('Printing Odd Number : ', +j);
+            }
+            j++;
         }
 
-        // loop has 3 parent1. initialization 2. condition 3. increment decrement
    </script> 
 </body>
 </html>
