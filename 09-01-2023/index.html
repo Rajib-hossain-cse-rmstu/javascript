@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-   <script>
+
+
+<script>
         // var number = prompt('Enter a number');
         // var i = 1;
         // while(i < number)
@@ -16,18 +18,21 @@
         //     i++;
         // }
 
-        var anotherNumber = prompt('Enter a number');//15
-        var j = 15;
-
-      
-        do {
-            if(j%2 !== 0)
-            {
-                console.log('Printing Odd Number : ', +j);
-            }
+        var anotherNumber = prompt('Enter a number');
+        anotherNumber = parseInt(anotherNumber);
+        var j = 1;
+        while(j <= anotherNumber){
             j++;
-        }  while(j <= anotherNumber);
+            if(j === 5)
+            {
+               continue;
+               console.log('Continute');
+            }
+                console.log(j);
 
-   </script> 
+        }
+        console.log('Out of loop');
+
+   </script>
 </body>
 </html>
